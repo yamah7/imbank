@@ -1,0 +1,29 @@
+.viewport {
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.container {
+  display: flex;
+  gap: 12px;
+}
+
+.slide {
+  flex: 0 0 30%;
+  min-width: 0;
+}
+
+@media (max-width: 640px) {
+  .slide {
+    flex: 0 0 50%;
+  }
+}
+
+.slideImage {
+  display: block;
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+}

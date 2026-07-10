@@ -1,0 +1,89 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.headerText {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.title {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-h);
+  letter-spacing: -0.01em;
+}
+
+.accountNumber {
+  margin: 0;
+  font-size: 14px;
+  color: var(--text);
+}
+
+.badge {
+  flex-shrink: 0;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 8px;
+  color: #1f9254;
+  background: #e3f5ec;
+  white-space: nowrap;
+}
+
+@media (prefers-color-scheme: dark) {
+  .badge {
+    color: #6ee7ab;
+    background: rgba(110, 231, 171, 0.14);
+  }
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 18px 0 0;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+.section + .section {
+  margin-top: 16px;
+}
+
+.row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0;
+}
+
+.label {
+  font-size: 15px;
+  color: var(--text);
+}
+
+.value {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-h);
+  text-align: right;
+}

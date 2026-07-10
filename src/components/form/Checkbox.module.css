@@ -1,0 +1,67 @@
+.row {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.box {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.box::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 6px;
+  border: 1.5px solid var(--border);
+  background: var(--bg);
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.input:hover + .check {
+  color: var(--accent-border);
+}
+
+.input:focus-visible ~ * {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.check {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  color: transparent;
+  transform: scale(0.5);
+  transition: transform 0.15s ease, color 0.15s ease;
+  pointer-events: none;
+}
+
+.input:checked ~ .check {
+  color: #fff;
+  transform: scale(1);
+}
+
+.box:has(.input:checked)::before {
+  border-color: var(--accent);
+  background: var(--accent);
+}
+
+.label {
+  font-size: 14px;
+  color: var(--text-h);
+}

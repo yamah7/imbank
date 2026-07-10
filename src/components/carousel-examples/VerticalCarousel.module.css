@@ -1,0 +1,50 @@
+.wrapper {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.viewport {
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  height: 220px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.slide {
+  flex: 0 0 100%;
+  min-height: 0;
+}
+
+.slideImage {
+  display: block;
+  width: 320px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.controls button {
+  font-size: 14px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  color: var(--accent);
+  background: var(--accent-bg);
+  cursor: pointer;
+}
+
+.controls button:hover {
+  border-color: var(--accent-border);
+}

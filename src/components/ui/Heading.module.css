@@ -1,0 +1,56 @@
+.heading {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-h);
+  margin: 0;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.xs {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.sm {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.md {
+  font-size: 18px;
+}
+
+.lg {
+  font-size: 22px;
+  letter-spacing: -0.01em;
+}
+
+.xl {
+  font-size: 28px;
+  letter-spacing: -0.02em;
+}
+
+.xl2 {
+  font-size: 36px;
+  letter-spacing: -0.03em;
+}
+
+.xl3 {
+  font-size: 48px;
+  letter-spacing: -0.04em;
+}
+
+@media (max-width: 1024px) {
+  .xl {
+    font-size: 24px;
+  }
+  .xl2 {
+    font-size: 30px;
+  }
+  .xl3 {
+    font-size: 36px;
+  }
+}

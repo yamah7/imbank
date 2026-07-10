@@ -1,0 +1,40 @@
+.row + .row {
+  margin-top: 20px;
+}
+
+.label {
+  margin: 0 0 8px;
+  font-size: 13px;
+  font-family: monospace;
+  color: var(--text-h);
+}
+
+.viewport {
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.container {
+  display: flex;
+  gap: 12px;
+}
+
+.slide {
+  flex: 0 0 40%;
+  min-width: 0;
+}
+
+@media (max-width: 640px) {
+  .slide {
+    flex: 0 0 65%;
+  }
+}
+
+.slideImage {
+  display: block;
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+}

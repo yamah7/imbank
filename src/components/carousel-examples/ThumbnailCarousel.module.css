@@ -1,0 +1,59 @@
+.viewport {
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.container {
+  display: flex;
+}
+
+.slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+.slideImage {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.thumbsViewport {
+  overflow: hidden;
+  margin-top: 12px;
+}
+
+.thumbsContainer {
+  display: flex;
+  gap: 8px;
+}
+
+.thumb {
+  flex: 0 0 auto;
+  padding: 0;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  background: none;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.2s, border-color 0.2s;
+}
+
+.thumb:hover {
+  opacity: 0.8;
+}
+
+.thumbSelected {
+  opacity: 1;
+  border-color: var(--accent);
+}
+
+.thumbImage {
+  display: block;
+  width: 72px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 4px;
+}

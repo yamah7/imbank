@@ -1,0 +1,48 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.viewport {
+  position: relative;
+  overflow: hidden;
+  width: 160px;
+  height: 168px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.slide {
+  flex: 0 0 56px;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.label {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-h);
+  will-change: transform, opacity;
+}
+
+.selectionBand {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  right: 8px;
+  height: 56px;
+  transform: translateY(-50%);
+  border-top: 1.5px solid var(--accent-border);
+  border-bottom: 1.5px solid var(--accent-border);
+  background: var(--accent-bg);
+  border-radius: 8px;
+  pointer-events: none;
+}

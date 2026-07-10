@@ -1,0 +1,58 @@
+.button {
+  font: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1.5px solid transparent;
+  cursor: pointer;
+  transition: transform 0.1s ease, border-color 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
+}
+
+.button:active {
+  transform: scale(0.97);
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+.primary:hover {
+  box-shadow: 0 0 0 4px var(--accent-bg);
+}
+
+.secondary {
+  background: var(--accent-bg);
+  color: var(--accent);
+}
+
+.secondary:hover {
+  border-color: var(--accent-border);
+}
+
+.ghost {
+  background: transparent;
+  color: var(--text-h);
+  border-color: var(--border);
+}
+
+.ghost:hover {
+  border-color: var(--accent-border);
+  color: var(--accent);
+}
+
+.danger {
+  background: #dc2626;
+  color: #fff;
+}
+
+.danger:hover {
+  box-shadow: 0 0 0 4px rgba(220, 38, 38, 0.16);
+}

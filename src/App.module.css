@@ -1,0 +1,24 @@
+.nav {
+  display: flex;
+  gap: 20px;
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--border);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.nav::-webkit-scrollbar {
+  display: none;
+}
+
+.nav a {
+  flex-shrink: 0;
+  color: var(--text-h);
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.nav a.active {
+  font-weight: 600;
+  color: var(--accent);
+}

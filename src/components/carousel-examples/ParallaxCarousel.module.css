@@ -1,0 +1,54 @@
+.viewport {
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.container {
+  display: flex;
+}
+
+.slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+.parallax {
+  overflow: hidden;
+  height: 220px;
+}
+
+.layer {
+  height: 100%;
+  will-change: transform;
+}
+
+.slideImage {
+  display: block;
+  width: 130%;
+  max-width: none;
+  height: 100%;
+  object-fit: cover;
+  margin-left: -15%;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.controls button {
+  font-size: 14px;
+  padding: 6px 14px;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  color: var(--accent);
+  background: var(--accent-bg);
+  cursor: pointer;
+}
+
+.controls button:hover {
+  border-color: var(--accent-border);
+}

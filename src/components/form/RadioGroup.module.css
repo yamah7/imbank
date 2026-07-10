@@ -1,0 +1,87 @@
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.option:hover {
+  border-color: var(--accent-border);
+}
+
+.option:has(.input:checked) {
+  border-color: var(--accent);
+  background: var(--accent-bg);
+}
+
+.radio {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.dot {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 1.5px solid var(--border);
+  background: var(--bg);
+  pointer-events: none;
+  transition: border-color 0.15s ease;
+}
+
+.dot::after {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  border-radius: 50%;
+  background: var(--accent);
+  transform: scale(0);
+  transition: transform 0.15s ease;
+}
+
+.input:checked ~ .dot {
+  border-color: var(--accent);
+}
+
+.input:checked ~ .dot::after {
+  transform: scale(1);
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.optionLabel {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+.optionDescription {
+  font-size: 12px;
+  color: var(--text);
+}
