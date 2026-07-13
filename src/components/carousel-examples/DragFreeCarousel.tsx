@@ -3,7 +3,7 @@ import { CAROUSEL_SLIDES } from '../../data/carouselSlides'
 import styles from './DragFreeCarousel.module.css'
 
 function DragFreeCarousel() {
-  const [emblaRef] = useEmblaCarousel({ dragFree: true, containScroll: 'trimSnaps' })
+  const [emblaRef] = useEmblaCarousel({ dragFree: true, align: 'start', containScroll: 'trimSnaps' })
 
   return (
     <div className={styles.viewport} ref={emblaRef}>
