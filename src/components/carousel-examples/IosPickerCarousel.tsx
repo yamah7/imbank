@@ -69,7 +69,7 @@ function IosPickerCarousel({ loop }: IosPickerCarouselProps) {
   return (
     <div className={styles.wrapper}>
       <div className={styles.viewport} ref={emblaRef}>
-        <div className={styles.container}>
+        <div className={loop ? styles.container : `${styles.container} ${styles.containerPadded}`}>
           {HOURS.map((hour) => (
             <div className={styles.slide} key={hour}>
               <span className={styles.label}>{hour}</span>

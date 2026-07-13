@@ -18,6 +18,10 @@
   height: 100%;
 }
 
+.containerPadded {
+  padding-block: 56px;
+}
+
 .slide {
   flex: 0 0 56px;
   min-height: 0;
