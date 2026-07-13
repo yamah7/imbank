@@ -37,3 +37,7 @@
   background: var(--accent);
   transition: left 0.1s linear;
 }
+
+.thumbDragging {
+  transition: none;
+}
