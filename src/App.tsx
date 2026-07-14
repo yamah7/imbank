@@ -29,6 +29,9 @@ function App() {
         >
           UI Components
         </NavLink>
+        <a href={`${import.meta.env.BASE_URL}storybook/`} target="_blank" rel="noreferrer">
+          Storybook
+        </a>
       </nav>
       <Outlet />
     </>
